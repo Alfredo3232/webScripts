@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name        Enable Vue Tools
+// @namespace   Violentmonkey Scripts
+// @match       *://*/*
+// @grant       none
+// @version     1.0
+// @author      Alfredo3232
+// @description 11/4/2023, 10:35:32 PM
+// ==/UserScript==
+
 let activeVueTools = async () => {
     // Find Vue 2
     let app = Array.from(document.querySelectorAll("*")).find((e) => e.__vue__).__vue__;
