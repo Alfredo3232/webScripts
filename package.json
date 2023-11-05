@@ -1,0 +1,15 @@
+{
+  "name": "webScripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix --ignore-path .gitignore"
+  },
+  "keywords": [],
+  "author": "Alfredo3232",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.53.0"
+  }
+}
