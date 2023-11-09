@@ -6,7 +6,8 @@ module.exports = {
     },
     "extends"       : ["eslint:recommended"],
     "parserOptions" : {
-        "ecmaVersion": "latest"
+        "ecmaVersion" : "latest",
+        "sourceType"  : "module"
     },
     "rules": {
         "arrow-body-style": [
@@ -42,6 +43,12 @@ module.exports = {
                 "avoidEscape"           : true
             }
         ],
+        "comma-dangle": ["error", {
+            "arrays"    : "never",
+            "objects"   : "never",
+            "imports"   : "never",
+            "functions" : "never"
+        }],
         "semi"           : ["error", "always"],
         "eqeqeq"         : ["error", "smart"],
         "no-else-return" : "error"
