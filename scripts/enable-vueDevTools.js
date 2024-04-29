@@ -1,11 +1,16 @@
 // ==UserScript==
-// @name        Enable Vue Tools
-// @namespace   Violentmonkey Scripts
-// @match       *://*/*
-// @grant       none
-// @version     1.0
-// @author      Alfredo3232
-// @description 11/4/2023, 10:35:32 PM
+// @name            Enable Vue Dev Tools
+// @namespace       Violentmonkey Scripts
+// @match           *://*/*
+// @grant           none
+// @version         1.0
+// @author          Alfredo3232
+// @description     Forces Vue Dev Tools to work in production builds on any page.
+// @require         https://devtools.vuejs.org/
+// @homepageURL     https://github.com/Alfredo3232/webScripts
+// @supportURL      https://github.com/Alfredo3232/webScripts/issues
+// @compatible      firefox
+// @compatible      librewolf
 // ==/UserScript==
 
 let activeVueTools = async () => {
@@ -29,14 +34,14 @@ let activeVueTools = async () => {
         // Restart Extension
         devtools.emit("init", VueApp);
 
-        return "Vue 2 DevTool is Ready!";
+        return;
     }
 
     // Find Vue 3
     if (app === undefined || app === null) {
         app = Array.from(document.querySelectorAll("*")).find((e) => e.__vue_app__).__vue_app__;
 
-        if (app === undefined || app === null) return "Vue not found.";
+        if (app === undefined || app === null) return;
     }
 
     //  Initialize and enable VueDevTools config
@@ -47,7 +52,8 @@ let activeVueTools = async () => {
     // Restart Extension
     devtools.emit("app:init", app, version, {});
 
-    return "Vue 3 DevTool is Ready!";
+    return;
 };
 
+// Time out to prevent some pages from breaking
 setTimeout(activeVueTools, 500);
