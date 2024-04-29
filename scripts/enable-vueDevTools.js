@@ -6,6 +6,7 @@
 // @version         1.0
 // @author          Alfredo3232
 // @description     Forces Vue Dev Tools to work in production builds on any page.
+// @license         GPL-3.0
 // @require         https://devtools.vuejs.org/
 // @homepageURL     https://github.com/Alfredo3232/webScripts
 // @supportURL      https://github.com/Alfredo3232/webScripts/issues
