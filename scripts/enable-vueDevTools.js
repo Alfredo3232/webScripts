@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Enable Vue Dev Tools
-// @namespace       Violentmonkey Scripts
+// @namespace       Enable Vue Dev Tools
 // @match           *://*/*
 // @grant           none
 // @version         1.0
@@ -14,7 +14,7 @@
 // @compatible      librewolf
 // ==/UserScript==
 
-let activeVueTools = async () => {
+let activeVueTools = () => {
     // Find Vue 2
     let app = Array.from(document.querySelectorAll("*")).find((e) => e.__vue__).__vue__;
 
