@@ -8,8 +8,8 @@
   },
   "keywords": [],
   "author": "Alfredo3232",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
-    "eslint": "^8.53.0"
+    "eslint": "^8.57.0"
   }
 }
