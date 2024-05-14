@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Auto Insert 4Chan Settings
 // @namespace       Auto Insert 4Chan Settings
-// @match           *://*/*
+// @match           *://boards.4chan.org/*
 // @grant           none
 // @version         1.0
 // @author          Alfredo3232
