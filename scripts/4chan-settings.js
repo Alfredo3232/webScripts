@@ -14,10 +14,14 @@
 // ==/UserScript==
 
 let createCookie = () => {
+    if (document.cookie.includes("nws_style=Tomorrow")) return;
+
     document.cookie = "nws_style=Tomorrow";
 };
 
 let createLocalStorageItem = () => {
+    if (localStorage.getItem("4chan-settings")) return;
+
     localStorage.setItem("4chan-settings", `
         {
             "quotePreview"          :true,
