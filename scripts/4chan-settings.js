@@ -16,7 +16,7 @@
 let createCookie = () => {
     if (document.cookie.includes("nws_style=Tomorrow")) return;
 
-    document.cookie = "nws_style=Tomorrow";
+    document.cookie = "ws_style=Tomorrow";
 };
 
 let createLocalStorageItem = () => {
