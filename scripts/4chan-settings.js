@@ -14,7 +14,7 @@
 // ==/UserScript==
 
 let createCookie = () => {
-    if (document.cookie.includes("nws_style=Tomorrow")) return;
+    if (document.cookie.includes("ws_style=Tomorrow")) return;
 
     document.cookie = "ws_style=Tomorrow";
 };
