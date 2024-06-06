@@ -2,6 +2,7 @@
 // @name            Enable Vue Dev Tools
 // @namespace       Enable Vue Dev Tools
 // @match           *://*/*
+// @exclude         https://www.4chan.org/*
 // @grant           none
 // @version         1.0
 // @author          Alfredo3232
