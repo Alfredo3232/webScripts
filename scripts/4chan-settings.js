@@ -14,9 +14,17 @@
 // ==/UserScript==
 
 let createCookie = () => {
-    if (document.cookie.includes("ws_style=Tomorrow")) return;
+    if (document.cookie.includes("ws_style=Tomorrow")) {
 
-    document.cookie = "ws_style=Tomorrow";
+    } else {
+        document.cookie = "ws_style=Tomorrow";
+    }
+    // Sometimes it alternates between "nws" and "ws" preventing the color scheme to take effect
+    if (document.cookie.includes("nws_style=Tomorrow")) {
+
+    } else {
+        document.cookie = "nws_style=Tomorrow";
+    }
 };
 
 let createLocalStorageItem = () => {
